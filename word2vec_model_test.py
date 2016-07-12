@@ -22,7 +22,7 @@ from gensim.models import Word2Vec
 model = Word2Vec.load('/home/nasta/nlp_czech_wiki/wiki.cz.model')
 
 model.most_similar(positive=['žena', 'král'], negative=['muž'])
-model.most_similar(positive=['prachy', 'pohoda'], negative=['práce'])
+model.most_similar(positive=['dovolená', 'plat'], negative=['práce'])
 
 # Slovak words are also present
 model.most_similar('pieseň', topn=5)
